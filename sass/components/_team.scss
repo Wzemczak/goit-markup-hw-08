@@ -1,0 +1,95 @@
+@import "../utils/_variables.scss";
+.main__team {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main__people {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 94px;
+  > li > figure {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    > figcaption {
+      padding: 30px 0px;
+      text-align: center;
+      background-color: $whiteTxtBcgrColor;
+      > h4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+
+        color: $textColor;
+      }
+      > p {
+        font-size: 16px;
+        line-height: 1.18;
+
+        letter-spacing: 0.03em;
+
+        color: $seconderyColor;
+        white-space: nowrap;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  &-container {
+    background: $dscrBcgrColor;
+    max-width: 1200px;
+    margin: 0 auto;
+    > ul > li > figure {
+      margin: 0px;
+    }
+  }
+}
+.main__links {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  fill: $svgColor;
+  &:hover {
+    fill: $whiteTxtBcgrColor;
+  }
+}
+
+.main__links:hover > .main__circle-person {
+  fill: $brandColor;
+}
+.main__circle-person {
+  fill: $whiteTxtBcgrColor;
+  &:hover {
+    fill: $brandColor;
+  }
+}
+.main__customers-box {
+  display: block;
+  margin: 0px 0px 94px 205px;
+}
+
+.main__customers {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $textColor;
+  margin-bottom: 50px;
+  margin-top: 94px;
+  &-logos {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid $svgColor;
+    border-radius: 4px;
+    margin-right: 30px;
+    fill: $svgColor;
+    &:hover {
+      fill: $brandColor;
+      border-color: $brandColor;
+    }
+  }
+}

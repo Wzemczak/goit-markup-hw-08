@@ -1,0 +1,22 @@
+.section {
+	width: 480px;
+	margin: auto;
+	&--portfolio {
+		margin: auto;
+		padding-top: 46px;
+	}
+}
+@media (min-width: 767px) {
+	.section {
+		width: 767px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+}
+@media (min-width: 1200px) {
+	.section {
+		width: 1600px;
+	}
+}

@@ -1,0 +1,35 @@
+.presentation {
+	width: 480px;
+	height: auto;
+	margin: auto;
+	margin-top: 30px;
+
+	&__h2 {
+		color: #212121;
+		text-align: center;
+		font-size: 36px;
+		margin: 0px;
+		padding-bottom: 50px;
+	}
+	&__h2--ourTeam {
+		color: #212121;
+		text-align: center;
+		font-size: 36px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: 0px;
+		background-color: #f5f4fa;
+	}
+}
+@media (min-width: 767px) {
+	.presentation {
+		width: 767px;
+		margin-top: 60px;
+	}
+}
+@media (min-width: 1200px) {
+	.presentation {
+		width: 1600px;
+		height: auto;
+	}
+}

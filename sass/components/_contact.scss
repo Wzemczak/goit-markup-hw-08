@@ -1,0 +1,34 @@
+@import "../utils/_variables.scss";
+.header__contact {
+  display: flex;
+  column-gap: 50px;
+  margin: 0px;
+  margin-left: 335px;
+  a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $seconderyColor;
+  }
+  a:hover,
+  a:focus {
+    color: $brandColor;
+    fill: $brandColor;
+  }
+}
+.header__icon {
+  margin-right: 10px;
+  &:hover {
+    fill: $brandColor;
+  }
+
+  &:nth-child(1) {
+    width: 16px;
+    height: 12px;
+  }
+  &:nth-child(2) {
+    width: 10px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,90 @@
+.service-order {
+	width: 480px;
+	height: 400px;
+	margin: auto;
+	background-color: $serviceOrderBackgroundColor;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(23, 26, 58, 0.4)), url('../images/serviceOrder_x1.jpg');
+	background-size: cover;
+
+	&__h1 {
+		width: auto;
+		height: fit-content;
+		padding: 118px 58px 0px 57px;
+		margin: 0;
+		font-size: 26px;
+		font-weight: 900;
+		line-height: 42px;
+		letter-spacing: 0.06em;
+		text-align: center;
+		color: $serviceOrderColor;
+	}
+	&__btn {
+		font-weight: 700;
+		font-size: 16px;
+		border: none;
+		background-color: $mainBlueColor;
+		color: $serviceOrderColor;
+		width: 200px;
+		height: 50px;
+		margin: auto;
+		padding: 10px 41px 10px 42px;
+		margin-top: 30px;
+		margin-left: 140px;
+		-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+	}
+	&__btn:hover,
+	&__btn:focus {
+		cursor: pointer;
+	}
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	.service-order {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(23, 26, 58, 0.4)),
+			url('../images/serviceOrder_x2.jpg');
+	}
+}
+@media (min-width: 767px) {
+	.service-order {
+		width: 767px;
+		height: 400px;
+		margin: auto;
+
+		&__h1 {
+			width: auto;
+			padding-left: 180px;
+			padding-right: 180px;
+			padding-top: 118px;
+			margin: 0;
+		}
+		&__btn {
+			margin-top: 30px;
+			margin-left: 284px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.service-order {
+		width: 1600px;
+		height: 600px;
+	
+
+		&__h1 {
+			width: auto;
+			padding-right: 452px;
+			padding-left: 452px;
+			padding-top: 118px;
+			margin-right: 0;
+			font-size: 44px;
+			font-weight: 900;
+			line-height: 60px;
+			letter-spacing: 0.06em;
+			text-align: center;
+		}
+		&__btn {
+			margin-top: 30px;
+			margin-left: 700px;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@import "../utils/_variables.scss";
+.footer__join-us {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $whiteTxtBcgrColor;
+  margin-left: 351px;
+  margin-top: -120px;
+}
+.footer__links {
+  width: 44px;
+  height: 44px;
+  margin-top: 20px;
+  margin-right: 10px;
+  fill: $whiteTxtBcgrColor;
+  &:hover > .footer__circle {
+    fill: $brandColor;
+  }
+}
+.footer__circle {
+  fill: rgba(255, 255, 255, 0.1);
+  &:hover {
+    fill: $brandColor;
+  }
+}

@@ -1,0 +1,163 @@
+
+.link-mobile-menu--active {
+	color: #2196f3;
+}
+.link-mobile-menu--linkPhone {
+	margin-top: 270px;
+	font-size: 34px;
+	color: $mainBlueColor;
+}
+.link-mobile-menu--linkMail {
+	font-size: 24px;
+	line-height: 28px;
+	color: $mobileMenuLinkColor;
+}
+.mobile-menu__socialMedia {
+	height: 22px;
+}
+
+.link-mobile-menu--socialMedia {
+	color: $mainBlueColor;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.mobile-menu__socialMedia--list {
+	display: block;
+	display: flex;
+	height: 22px;
+}
+
+.mobile-menu__socialMedia--element {
+	border-right: solid 1px $mobileMenuSocialMediaBorder;
+	width: fit-content;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+.mobile-menu__socialMedia--element:last-child {
+	border: none;
+	width: fit-content;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+
+.mobile-menu-container {
+	padding-top: 10px;
+	min-width: 320px;
+	max-width: 1170px;
+	margin-left: 276px;
+}
+
+.mobile-menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.mobile-menu__iconClose {
+	width: 18.67px;
+	height: 18.67px;
+}
+.menu-box {
+	width: 480px;
+	height: auto;
+	margin-left:0;
+	padding: 48px 40px;
+	background-color: $mobileMenuBoxBackgroundColor;
+	
+}
+
+.menu {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+@media (max-width: 767px) {
+	.menu {
+		display: none;
+	}
+}
+
+.menu .link {
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+	text-decoration: underline;
+}
+
+.menu-toggle {
+	height: 40px;
+	width: 40px;
+	background-color: transparent;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+}
+.menu-toggle:hover {
+	cursor: pointer;
+}
+
+@media (min-width: 767px) {
+	.menu-toggle {
+		display: none;
+	}
+}
+
+.menu-toggle:hover > svg,
+.menu-toggle:focus > svg {
+	fill: $mainBlueColor;
+	
+}
+
+.menu-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	padding: 32px;
+	background-color: $mobileMenuBoxBackgroundColor;
+	z-index: 999;
+	transform: translateX(120%);
+	transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+	transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+	position: absolute;
+	left: 450px;
+	top: 16px;
+	color: #fff;
+}
+
+.mobile-menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.mobile-menu .link-mobile {
+	color: black;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 47px;
+	letter-spacing: 0.02em;
+	text-align: left;
+}
+.mobile-menu .link-mobile--active {
+	color: $mainBlueColor;
+}
+.mobile-menu .link-mobile:hover {
+	color: $mainBlueColor;
+}

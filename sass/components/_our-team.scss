@@ -1,0 +1,125 @@
+.our-team {
+	width: 480px;
+	height: auto;
+	background-color: #f5f4fa;
+	margin-top: 60px;
+	padding-bottom: 60px;
+
+	&__figure {
+		-webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1490196078), 0px 2px 2px rgba(0, 0, 0, 0.1490196078),
+			0px 4px 2px rgba(0, 0, 0, 0.1490196078);
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1490196078), 0px 2px 2px rgba(0, 0, 0, 0.1490196078),
+			0px 4px 2px rgba(0, 0, 0, 0.1490196078);
+		width: 450px;
+		border-radius: 0px 0px 4px 4px;
+		margin: auto;
+		margin-bottom: 30px;
+		background-color: #f5f4fa;
+	}
+	&__photo {
+		width: 450px;
+		height: 460px;
+	}
+	&__figcuption {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 19px;
+		letter-spacing: 0.03em;
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	&__name {
+		color: #212121;
+	}
+	&__function {
+		padding-top: 10px;
+		color: #757575;
+	}
+	&__socialMedia {
+		width: 206px;
+		display: flex;
+		justify-content: space-between;
+		margin: auto;
+		padding-top: 16px;
+	}
+	&__socialMedia--mobile {
+		width: 206px;
+		margin: auto;
+		padding-top: 16px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	&__socialMediaCircle {
+		fill: #afb1b8;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		position: relative;
+	}
+	&__socialMediaIcon {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+	}
+	&__socialMediaLink:hover > &__socialMediaCircle,
+	&__socialMediaLink:focus > &__socialMediaCircle {
+		background-color: #2196f3;
+		-webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	&__socialMediaLink:hover > &__socialMediaCircle > svg,
+	&__socialMediaLin:focus > &__socialMediaCircle > svg {
+		fill: #ffffff;
+		-webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+@media (min-width: 767px) {
+	.our-team {
+		width: 767px;
+		margin-top: 15px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		&__photo {
+			width: 354px;
+			height: 374px;
+		}
+		&__figure {
+			width: 354px;
+		}
+	}
+	@media (min-width: 1200px) {
+		.our-team {
+			width: 1600px;
+			margin-top: 94px;
+
+			&__figure {
+				width: 270px;
+			}
+			&__photo {
+				width: 270px;
+				height: 260px;
+			}
+			&__list {
+				width: 1170px;
+				margin: auto;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			
+			}
+		}
+	}
+}

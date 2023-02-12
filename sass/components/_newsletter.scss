@@ -1,0 +1,52 @@
+@import "../utils/_variables.scss";
+.footer__newsletter {
+  margin-top: -85px;
+  margin-left: 650px;
+  position: absolute;
+  &-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $whiteTxtBcgrColor;
+    padding-bottom: 20px;
+  }
+  &-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $backgroundColor;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      padding-left: 16px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  &-btn {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: $whiteTxtBcgrColor;
+    background-color: $brandColor;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+  }
+}
+.footer__icon-send {
+  margin-left: 10px;
+}

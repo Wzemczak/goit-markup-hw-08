@@ -1,0 +1,25 @@
+@import "../utils/_variables.scss";
+.header__navigation {
+  display: flex;
+  width: 261px;
+  justify-content: space-between;
+  margin: auto;
+  padding: 32px 0px;
+  margin-left: 93px;
+  &--active {
+    color: $brandColor !important;
+    text-decoration: underline $brandColor 2px;
+    text-underline-offset: 35px;
+  }
+  a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $textColor;
+  }
+  a:hover,
+  a:focus {
+    color: $brandColor;
+  }
+}
